@@ -1,4 +1,4 @@
-# terrafom-space-invaders-gke
+# sample-nodejs-app-gke
 
 ## To run:
 
