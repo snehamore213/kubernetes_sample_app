@@ -1,33 +1,33 @@
-resource "kubernetes_deployment" "si-deployment" {
+resource "kubernetes_deployment" "internal-deployment" {
   metadata {
-    name = "space-invaders-deployment"
+    name = "internal-deployment"
     labels = {
-      App = "space-invaders"
+      App = "internal-deployment"
     }
     namespace = kubernetes_namespace.n.metadata[0].name
   }
 
   spec {
-    replicas                  = 4
+    replicas                  = 2
     progress_deadline_seconds = 60
     selector {
       match_labels = {
-        App = "space-invaders"
+        App = "internal-deployment"
       }
     }
     template {
       metadata {
         labels = {
-          App = "space-invaders"
+          App = "internal-deployment"
         }
       }
       spec {
         container {
-          image = "drehnstrom/space-invaders:latest"
-          name  = "space-invaders"
+          image = "cinnyabraham06/internalapp:v1"
+          name  = "internal"
 
           port {
-            container_port = 80
+            container_port = 8080
           }
 
           resources {

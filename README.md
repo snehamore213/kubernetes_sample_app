@@ -28,3 +28,4 @@ Kubernetes service
 terraform destroy -auto-approve
 
 # kubernetes_sample_app
+# kubernetes_sample_app
