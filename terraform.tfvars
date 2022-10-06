@@ -1,5 +1,5 @@
 # GCP Settings
-project_id   = "roidtc-may2022-u311" # Enter your project ID here.
+project_id   = "triple-grove-360115" # Enter your project ID here.
 gcp_region_1 = "us-central1"
 gcp_zone_1   = "us-central1-c"
 
