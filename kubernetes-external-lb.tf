@@ -18,5 +18,5 @@ resource "kubernetes_service" "external-lb-service" {
 
 
 output "lb_status" {
-value = kubernetes_service.external-lb-service.status
+  value = kubernetes_service.external-lb-service.status
 }
