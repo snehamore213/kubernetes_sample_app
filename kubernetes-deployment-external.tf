@@ -31,7 +31,7 @@ resource "kubernetes_deployment" "external-app-deployment" {
             value = 'http://internal-lb-svc'
           }
           port {
-            container_port = "8080"
+            container_port = '8080'
           }
 
           resources {
