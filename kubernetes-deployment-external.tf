@@ -23,7 +23,7 @@ resource "kubernetes_deployment" "external-app-deployment" {
       }
       spec {
         container {
-          image = "cinnyabraham06/externalapp:v1"
+          image = "sneha-image/externalapp:v1"
           name  = "external-deployment"
           env {
             name = "SERVER"
