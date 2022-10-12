@@ -23,8 +23,8 @@ resource "kubernetes_deployment" "external-app-deployment" {
       }
       spec {
         container {
-          image = "snehamore213/externalui:v1"
-          name  = "external-deployment"
+          image = "snehamore213/externalui"
+          name  = "external-uic"
           env {
             name = "SERVER"
             #             value: 'http://34.122.171.52'
