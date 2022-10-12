@@ -9,7 +9,7 @@ resource "kubernetes_deployment" "external-app-deployment" {
 
   spec {
     replicas                  = 2
-    progress_deadline_seconds = 60
+    progress_deadline_seconds = 120
     selector {
       match_labels = {
         App = "external-app-deployment"
