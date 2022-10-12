@@ -23,7 +23,7 @@ resource "kubernetes_deployment" "external-app-deployment" {
       }
       spec {
         container {
-          image = "sneha-image/externalapp:v1"
+          image = "snehamore/externalui:v1"
           name  = "external-deployment"
           env {
             name = "SERVER"
