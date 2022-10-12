@@ -23,7 +23,7 @@ resource "kubernetes_deployment" "internal-deployment" {
       }
       spec {
         container {
-          image = "cinnyabraham06/internalapp:v1"
+          image = "sneha-image/internalapp:v1"
           name  = "internal"
 
           port {
