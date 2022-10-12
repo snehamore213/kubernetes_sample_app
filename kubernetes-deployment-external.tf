@@ -28,7 +28,7 @@ resource "kubernetes_deployment" "external-app-deployment" {
           env {
             name = "SERVER"
             #             value: 'http://34.122.171.52'
-            value = "http://internal-lb-svc"
+            value = 'http://internal-lb-svc'
           }
           port {
             container_port = "8080"
