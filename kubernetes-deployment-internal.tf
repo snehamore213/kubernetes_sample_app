@@ -9,7 +9,7 @@ resource "kubernetes_deployment" "internal-deployment" {
 
   spec {
     replicas                  = 2
-    progress_deadline_seconds = 120
+    progress_deadline_seconds = 180
     selector {
       match_labels = {
         App = "internal-deployment"
